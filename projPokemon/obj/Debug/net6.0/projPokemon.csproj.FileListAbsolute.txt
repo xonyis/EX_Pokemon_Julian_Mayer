@@ -1,0 +1,15 @@
+/Users/julian/Desktop/projpokemon/projPokemon/bin/Debug/net6.0/projPokemon
+/Users/julian/Desktop/projpokemon/projPokemon/bin/Debug/net6.0/projPokemon.deps.json
+/Users/julian/Desktop/projpokemon/projPokemon/bin/Debug/net6.0/projPokemon.runtimeconfig.json
+/Users/julian/Desktop/projpokemon/projPokemon/bin/Debug/net6.0/projPokemon.dll
+/Users/julian/Desktop/projpokemon/projPokemon/bin/Debug/net6.0/projPokemon.pdb
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/projPokemon.csproj.AssemblyReference.cache
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/projPokemon.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/projPokemon.AssemblyInfoInputs.cache
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/projPokemon.AssemblyInfo.cs
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/projPokemon.csproj.CoreCompileInputs.cache
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/projPokemon.dll
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/refint/projPokemon.dll
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/projPokemon.pdb
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/projPokemon.genruntimeconfig.cache
+/Users/julian/Desktop/projpokemon/projPokemon/obj/Debug/net6.0/ref/projPokemon.dll
