@@ -9,28 +9,28 @@ namespace projPokemon
 {
     internal class Pokemons
     {
-        public string Name { get; set; }
         public int Pv { get; set; }
         public int Atk { get; set; }
         public int Def { get; set; }
         public int Vit { get; set; }
         public int Xp { get; set; }
         public int PvMax { get; set; }
-
+        public bool Alive { get; set; }
 
         public Pokemons()
         {
         }
 
-        public Pokemons(string name, int PV, int ATK, int DEF, int VIT, int XP, int pvmax)
+        public Pokemons(int PV, int ATK, int DEF, int VIT, int XP, int pvmax)
         {
-            Name = name;
+            
             Pv = PV;
             Atk = ATK;
             Def = DEF;
             Vit= VIT;
             Xp = XP;
             PvMax = pvmax;
+            bool Alive = true;
         }
 
 
@@ -47,24 +47,39 @@ namespace projPokemon
                 {
                     Pv = PvMax;
 
-                    Console.WriteLine(Name + " a été soigné ");
+                    Console.WriteLine("Votre pokemon été soigné ");
                 }
 
             }
             else
             {
-                Console.WriteLine(Name +" a déja toute sa vie");
+                Console.WriteLine("Votre pokemon a déja toute sa vie");
+            }
+
+        }
+
+        public void TakingDamages(int pokemonAttack)//Method to take damages
+        {
+            Pv -= pokemonAttack - Def;//The pokemon's defense blocks damages
+            if (Pv <= 0)//If a pokemon has no health points the pokemon is beaten
+            {
+                GameOver();
+            }
+            else
+            {
+                Console.WriteLine("Votre Pokemon a pris" + (pokemonAttack - Def) + "de dégaats. Il lui rest" + Pv + "HP/" + PvMax + "HP.\n");
             }
 
         }
 
 
-       /* mettre fin a la partie */
+        /* mettre fin a la partie */
         public void GameOver()
         {
             Pv = 0;
             Console.WriteLine("GAME OVER");
-            bool game = false;
+            Alive = false;
+            
         }
 
 
@@ -74,7 +89,7 @@ namespace projPokemon
         {
             var DmgRecu = 6;
             Pv = Pv - DmgRecu;
-            Console.WriteLine(Name + "reçoit " + DmgRecu + " points de dégâts !");
+            Console.WriteLine("Votre pokemon reçoit " + DmgRecu + " points de dégâts !");
 
             if (Pv <= 0)
             {
@@ -107,6 +122,7 @@ namespace projPokemon
             {
                 Console.WriteLine("Votre pokémon ne peut pas encore gagner un niveau !");
             }
+
         }
 
     }

@@ -5,6 +5,7 @@ namespace projPokemon
 {
     internal class Alakazam : Pokemons
     {
+        public string Name { get; set; }
         public Alakazam()
         {
             Name = "Alakazam";
@@ -14,6 +15,7 @@ namespace projPokemon
             Vit = 120;
             Xp = 0;
             PvMax = 55;
+            Alive = true;
         }
     }
 }

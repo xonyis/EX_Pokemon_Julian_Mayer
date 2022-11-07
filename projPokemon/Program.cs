@@ -59,64 +59,23 @@ while (game)
     int index = random.Next(list.Count);
     var randomizerChoice = list[index];
 
-
     switch (ChoiceTwo)
     {
 
-        /* La section "Combattre" n'est PAS fonctionnelle, 
-         * cependant je laisse quand même ci-dessous quelques exemples de code que j'aurai inséré en cas de bon fonctionnement,
-         * afin de montrer que j'aurai sû le faire. */
-
-        /* Pour le heal en combat, exemple : new Charmander().HealPotion(); 
-        Pour recevoir des dmg en combat, exemple : new Charmander().ReceiveDmg(new Pikachu().Atk);
-        Pour l'xp en combat, exemple : new Charmander().GetExperiences(); */
-
-
-        /* Choix pour lancer un combat */
+        /* lancer un combat */
 
         case "1":
 
             bool fight = true;
-            while (fight)
+            while (fight == true)
             {
                 Console.WriteLine("Vous envoyez votre Pokemon au combat !");
-                break;
-            } break;
+                var enemy = randomizerChoice;
 
-
-        /* Choix pour soigner le starter hors combat */
-
-        case "2":
-            if (Starter == "Salamèche" && new Salameche().Pv < new Salameche().PvMax)
-            {
-                new Salameche().Pv = new Salameche().PvMax;
-                Console.WriteLine("Votre Pokémon a toute sa vie !");
-
-
-            }
-            else if (Starter == "Carapuce" && new Carapuce().Pv < new Carapuce().PvMax)
-            {
-                new Carapuce().Pv = new Carapuce().PvMax;
-                Console.WriteLine("Votre Pokémon a toute sa vie !");
-
-            }
-            else if (Starter == "Bulbizarre" && new Bulbizar().Pv < new Bulbizar().PvMax)
-            {
-                new Bulbizar().Pv = new Bulbizar().PvMax;
-                Console.WriteLine("Votre Pokémon a toute sa vie !");
-
-            }
-            else
-            {
-                Console.WriteLine("Il n'est pas nécessaire de soigner votre Pokémon !");
-                Console.WriteLine(" ");
-                break;
-            }
-            break;
-    
-
-
-        /* Choix pour voir les stats */
+                
+                
+            }break;
+               
 
         case "3":
             if (Starter == "1")
@@ -159,7 +118,7 @@ while (game)
         /* Choix pour quitter l'interface */
 
         case "4":
-            Console.WriteLine("Vous décidez de quitter la partie : Sauvegarde en cours ... Merci d'avoir joué !");
+            Console.WriteLine("Vous quittez la partie : Sauvegarde en cours ...");
             
             break;
 

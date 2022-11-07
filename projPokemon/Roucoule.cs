@@ -3,6 +3,7 @@ namespace projPokemon
 {
     internal class Roucoule : Pokemons
     {
+        public string Name { get; set; }
         public Roucoule()
         {
             Name = "Roucoule";
@@ -12,6 +13,7 @@ namespace projPokemon
             Vit = 56;
             Xp = 0;
             PvMax = 40;
+            Alive = true;
         }
     }
 }

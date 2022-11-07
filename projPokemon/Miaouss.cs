@@ -3,6 +3,7 @@ namespace projPokemon
 {
    internal class Miaouss : Pokemons
     {
+        public string Name { get; set; }
         public Miaouss()
         {
             Name = "Miaouss";
@@ -12,6 +13,7 @@ namespace projPokemon
             Vit = 90;
             Xp = 0;
             PvMax = 40;
+            Alive = true;
         }
 
     }

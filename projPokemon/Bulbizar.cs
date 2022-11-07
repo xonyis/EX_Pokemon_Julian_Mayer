@@ -3,6 +3,7 @@ namespace projPokemon
 {
     internal class Bulbizar : Pokemons
     {
+        public string Name { get; set; }
         public Bulbizar()
         {
             Name = "Bulbizar";
