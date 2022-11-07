@@ -1,1 +1,1 @@
-Voici le rendu du TP Pokemon je n'ai malheuresement pas su faire le TP entièrement il me manque la methode attaquer.
+Voici le rendu du TP Pokemon. Je n'ai malheuresement pas su faire le TP entièrement il me manque la boucle pour les combats.
